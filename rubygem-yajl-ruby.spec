@@ -1,7 +1,7 @@
 # Generated from yajl-ruby-1.1.0.gem by gem2rpm -*- rpm-spec -*-
 %define rbname yajl-ruby
 %define version 1.1.0
-%define release 1
+%define release 2
 %define debug_package %{nil}
 
 Summary: Ruby C bindings to the excellent Yajl JSON stream-based parser library.
@@ -24,7 +24,7 @@ BuildRequires: ruby >= 1.8.6
 BuildRequires: yajl-devel
 BuildRequires: ruby-devel
 BuildRequires: rubygems
-Provides: ruby(Yajl-ruby) = %{version}
+Provides: rubygem(yajl-ruby) = %{version}
 
 %define gemdir %(ruby -rubygems -e 'puts Gem::dir' 2>/dev/null)
 %define gembuilddir %{buildroot}%{gemdir}
